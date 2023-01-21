@@ -101,10 +101,8 @@
   </head>
   <body>
     <header>
-      <h1>
-        <img
-          src="mdn-splash-page-start/originals/firefox_logo-only_RGB" />Mozilla
-      </h1>
+      <h1>Mozilla</h1>
+      <img src="originals/firefox_logo-only_RGB-120.png" alt="firefox logo" />
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
     </header>
@@ -143,16 +141,38 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo-only_RGB.png" alt="firefox logo">
+          <img
+            srcset="
+              originals/firefox_logo_only_RGB-120.png 120w,
+              originals/firefox_logo-only_RGB.png     400w
+            "
+            sizes="(max-width: 500px) 120px, 400px"
+            src="originals/firefox_logo-only_RGB.png"
+            alt="firefox logo" />
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur-head.png" alt="dinosaur head">
+          <img
+            srcset="
+              originals/mozilla-dinosaur-head-120.png 120w,
+              originals/mozilla-dinosaur-head.png     400w
+            "
+            sizes="(max-width: 500px) 120px, 400px"
+            src="originals/mozilla-dinosaur-head.png"
+            alt="dinosaur head" />
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons.jpg" alt="firefox-addons" />
+          <img
+            srcset="
+              originals/firefox-addons-120.jpg 120w,
+              originals/firefox-addons.jpg     400w
+            "
+            sizes="(max-width: 500px) 120px, 400px"
+            src="originals/firefox-addons.jpg"
+            alt="firefox-addons" />
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="mdn" />
+          <img src="originals/mdn.svg" alt="mdn" />
+        </a>
         <div class="clearfix"></div>
       </div>
 
